@@ -20,10 +20,6 @@ class PasswordResetRequestForm extends Model
     public function rules()
     {
         return [
-            /*['phone', PhoneFilterValidator::className()],
-            ['phone', 'match', 'pattern' => '/[0-9]+$/s',
-                'message' => 'Номер телефона необходимо вводить в формате +7 (900) 333-22-11',
-            ],*/
             ['email', 'email'],
             [['url', 'email'], 'required'],
         ];
