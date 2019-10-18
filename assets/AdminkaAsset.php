@@ -44,4 +44,9 @@ class AdminkaAsset extends AssetBundle
         */
         parent::init();
     }
+
+    public function options()
+    {
+        $this->forceCopy = true;
+    }
 }
